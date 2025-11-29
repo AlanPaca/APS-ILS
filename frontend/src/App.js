@@ -72,7 +72,7 @@ function App() {
     } catch (error) {
       console.error('Error sending message:', error);
       toast.error(error.response?.data?.detail || 'Failed to send message. Please check if API key is configured.');
-      setMessages(prev => prev.filter(m => m.content !== userMessage));
+      // Keep user message visible even if AI response fails
     } finally {
       setIsLoading(false);
     }

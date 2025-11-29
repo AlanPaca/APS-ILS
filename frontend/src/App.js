@@ -216,9 +216,9 @@ function App() {
       <Toaster position="top-center" />
       
       {/* Header */}
-      <div className="px-6 py-4 border-b border-border bg-white">
-        <h1 className="text-3xl font-bold text-primary tracking-tight">APS ILS Work Examples Manager</h1>
-        <p className="text-sm text-muted-foreground mt-1">Manage and assess work examples against APS Integrated Leadership System</p>
+      <div className="px-4 md:px-6 py-3 md:py-4 border-b border-border bg-white">
+        <h1 className="text-xl md:text-3xl font-bold text-primary tracking-tight">APS ILS Work Examples Manager</h1>
+        <p className="text-xs md:text-sm text-muted-foreground mt-1">Manage and assess work examples against APS Integrated Leadership System</p>
       </div>
 
       <div className="flex-1 flex flex-col md:flex-row overflow-hidden">

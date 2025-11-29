@@ -1,0 +1,162 @@
+{
+  "identity": {
+    "persona": "E1: The Anti-AI Designer",
+    "mission": "Create a hyper-efficient, authoritative, yet human-centric interface for APS job applicants. Reject generic SaaS templates. Embrace 'Swiss Utility'—clean, structured, and data-forward.",
+    "principles": [
+      "Fusion over Imitation: Mix Government Authority with Swiss Design precision.",
+      "Content is King: The job application text is the hero. Everything else is support.",
+      "Negative Space: Use whitespace to reduce cognitive load during stressful application processes.",
+      "Contrast: High contrast for readability and accessibility (WCAG AA+)."
+    ]
+  },
+  "typography": {
+    "strategy": "The 'Soft Utility' Archetype",
+    "headings": {
+      "family": "Manrope",
+      "weights": ["600", "800"],
+      "usage": "Use for all section titles, modal headers, and feature callouts. Tight tracking (-0.02em).",
+      "fallback": "sans-serif"
+    },
+    "body": {
+      "family": "Public Sans",
+      "weights": ["400", "500"],
+      "usage": "Optimized for interface legibility. Use for chat text, form inputs, and data tables.",
+      "fallback": "system-ui"
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "usage": "Use for tags, IDs, and system logs.",
+      "fallback": "monospace"
+    }
+  },
+  "colors": {
+    "palette_name": "Canberra Clarity",
+    "archetype": "Swiss & High-Contrast",
+    "base": {
+      "background": "#ffffff",
+      "surface": "#f8fafc",
+      "surface_highlight": "#f1f5f9",
+      "border": "#e2e8f0"
+    },
+    "primary": {
+      "main": "#0f172a",
+      "hover": "#1e293b",
+      "foreground": "#ffffff",
+      "description": "Deep Slate (Canberra Night). Use for primary buttons, active states, and main headings."
+    },
+    "accent": {
+      "main": "#0ea5e9",
+      "subtle": "#e0f2fe",
+      "foreground": "#0284c7",
+      "description": "Sky Blue. Use for 'AI Active' states, links, and focus rings. Represents clarity."
+    },
+    "functional": {
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444",
+      "info": "#3b82f6"
+    },
+    "tags": {
+      "strategy": "Pastel Background + Dark Text (High Legibility)",
+      "colors": [
+        {"bg": "#dcfce7", "text": "#14532d"},
+        {"bg": "#dbeafe", "text": "#1e3a8a"},
+        {"bg": "#fef9c3", "text": "#713f12"},
+        {"bg": "#f3e8ff", "text": "#581c87"},
+        {"bg": "#ffe4e6", "text": "#881337"}
+      ]
+    }
+  },
+  "layout": {
+    "grid_system": "The 'Control Room' Grid",
+    "dashboard_structure": {
+      "container": "h-screen w-full flex overflow-hidden bg-background",
+      "sidebar": "w-80 flex-shrink-0 border-r border-border bg-surface hidden md:flex flex-col",
+      "main_area": "flex-1 flex flex-col min-w-0",
+      "chat_zone": "flex-1 overflow-y-auto p-6 space-y-6 scroll-smooth",
+      "input_area": "p-6 border-t border-border bg-background/80 backdrop-blur-md sticky bottom-0"
+    },
+    "spacing": {
+      "base": "p-6",
+      "loose": "p-8",
+      "tight": "p-4",
+      "gap": "gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "style": "Sharp corners or minimal radius (rounded-md). No pill shapes for primary actions.",
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm hover:shadow-md transition-all duration-200",
+      "secondary": "bg-surface text-foreground border border-border hover:bg-surface_highlight hover:border-primary/20"
+    },
+    "cards": {
+      "style": "Flat, 1px border, no shadow by default. 'Technical' look.",
+      "base": "bg-card border border-border rounded-lg p-6",
+      "hover": "hover:border-primary/30 hover:shadow-sm transition-colors duration-200"
+    },
+    "chat_bubbles": {
+      "user": "bg-primary text-primary-foreground rounded-2xl rounded-tr-sm px-5 py-3 max-w-[80%]",
+      "ai": "bg-surface border border-border text-foreground rounded-2xl rounded-tl-sm px-5 py-3 max-w-[80%] shadow-sm"
+    },
+    "tags": {
+      "style": "Pill-shaped, dense, interactive.",
+      "base": "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+      "interactive": "cursor-pointer hover:bg-opacity-80"
+    },
+    "inputs": {
+      "style": "Minimalist, focus-heavy.",
+      "base": "flex h-12 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "usage": "Use sparingly on sticky headers and the chat input area.",
+      "classes": "bg-white/80 backdrop-blur-xl border-t border-white/20"
+    },
+    "borders": {
+      "usage": "Use 1px borders to define structure. Avoid using shadows to define hierarchy.",
+      "color": "border-slate-200 dark:border-slate-800"
+    },
+    "motion": {
+      "hover": "transition-all duration-200 ease-out",
+      "entrance": "animate-in fade-in slide-in-from-bottom-4 duration-500"
+    }
+  },
+  "images": {
+    "strategy": "Abstract, Structural, Professional. No stock photos of people shaking hands.",
+    "selected_assets": [
+      {
+        "url": "https://images.unsplash.com/photo-1580920900532-af6fcf2110df?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "category": "background_texture",
+        "description": "White and gray concrete wall - Use for subtle texture in empty states or login screens."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1761871639838-ddb5b9f307d1?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "category": "hero_abstract",
+        "description": "Modern glass building exterior - Use for the 'Welcome' or 'Dashboard Empty State' visual."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1759455456560-4c523b3f81b6?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "category": "pattern",
+        "description": "Repeating window pattern - Use for 'Data Processing' or 'Loading' visuals."
+      }
+    ]
+  },
+  "universal_guidelines": {
+    "anti_slop_rules": [
+      "DO NOT use gradients for text or buttons. Keep it flat and clean.",
+      "DO NOT use 'Inter' for headings. Use 'Manrope'.",
+      "DO NOT center-align long text. Left-align for readability.",
+      "DO NOT use generic AI emojis (🤖, 🧠). Use abstract icons (Sparkles, Lightning, Geometric Shapes).",
+      "ALWAYS add 'data-testid' to interactive elements.",
+      "ALWAYS use 'sonner' for toasts.",
+      "ALWAYS use 'lucide-react' for icons."
+    ],
+    "accessibility": {
+      "contrast": "Ensure all text meets WCAG AA (4.5:1).",
+      "focus": "Ensure visible focus states for keyboard navigation.",
+      "motion": "Respect 'prefers-reduced-motion'."
+    }
+  },
+  "instructions_to_main_agent": "You are building a tool for professionals. It should feel like a 'Cockpit' or 'Control Room'. The user is here to work, not to be entertained. Prioritize speed, clarity, and data density. The 'Chat' is the engine, the 'Tags' are the fuel. Make them prominent."
+}

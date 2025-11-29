@@ -223,7 +223,7 @@ function App() {
 
       <div className="flex-1 flex overflow-hidden">
         {/* Left Sidebar - Work Examples */}
-        <div className="w-96 flex-shrink-0 border-r border-border bg-surface flex flex-col">
+        <div className="w-full md:w-96 flex-shrink-0 md:border-r border-border bg-surface flex flex-col">
           <div className="p-4 border-b border-border">
             <div className="flex gap-2 mb-3">
               <Button

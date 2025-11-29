@@ -150,6 +150,7 @@ function App() {
         aps_level: 'APS6'
       });
       setAssessmentResult(response.data.assessment);
+      toast.success('Assessment complete!');
     } catch (error) {
       console.error('Error assessing:', error);
       toast.error(error.response?.data?.detail || 'Assessment failed. Please check if API key is configured.');

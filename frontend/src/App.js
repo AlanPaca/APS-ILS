@@ -249,24 +249,24 @@ function App() {
             </div>
 
             <div className="space-y-2">
-              <Select value={activeFilters.aps_level} onValueChange={(val) => setActiveFilters(prev => ({ ...prev, aps_level: val }))}>
+              <Select value={activeFilters.aps_level || undefined} onValueChange={(val) => setActiveFilters(prev => ({ ...prev, aps_level: val === 'all' ? '' : val }))}>
                 <SelectTrigger data-testid="filter-aps-level">
                   <SelectValue placeholder="Filter by APS Level" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Levels</SelectItem>
+                  <SelectItem value="all">All Levels</SelectItem>
                   {APS_LEVELS.map(level => (
                     <SelectItem key={level} value={level}>{level}</SelectItem>
                   ))}
                 </SelectContent>
               </Select>
 
-              <Select value={activeFilters.capability} onValueChange={(val) => setActiveFilters(prev => ({ ...prev, capability: val }))}>
+              <Select value={activeFilters.capability || undefined} onValueChange={(val) => setActiveFilters(prev => ({ ...prev, capability: val === 'all' ? '' : val }))}>
                 <SelectTrigger data-testid="filter-capability">
                   <SelectValue placeholder="Filter by Capability" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Capabilities</SelectItem>
+                  <SelectItem value="all">All Capabilities</SelectItem>
                   {ILS_CAPABILITIES.map(cap => (
                     <SelectItem key={cap} value={cap}>{cap}</SelectItem>
                   ))}

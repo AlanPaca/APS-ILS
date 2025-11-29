@@ -383,23 +383,25 @@ function App() {
 
               {/* Assessment Result */}
               {assessmentResult && (
-                <div className="bg-card border border-border rounded-lg p-4 md:p-6" data-testid="assessment-result">
-                  <div className="flex justify-between items-start mb-4">
+                <div className="bg-white border-2 border-accent rounded-lg p-4 md:p-6 shadow-lg" data-testid="assessment-result">
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4 gap-2">
                     <div className="flex items-center gap-2">
                       <BookOpen className="h-5 w-5 text-accent" />
-                      <h3 className="text-lg font-semibold text-primary">Assessment Result</h3>
+                      <h3 className="text-lg md:text-xl font-bold text-primary">Assessment Result</h3>
                     </div>
                     <Button
                       data-testid="save-assessment-button"
                       size="sm"
                       onClick={handleSaveAssessment}
-                      className="bg-primary hover:bg-primary/90"
+                      className="bg-primary hover:bg-primary/90 w-full md:w-auto"
                     >
                       <Save className="h-4 w-4 mr-2" /> Save Assessment
                     </Button>
                   </div>
-                  <div className="prose prose-sm max-w-none">
-                    <pre className="whitespace-pre-wrap text-sm text-foreground font-sans">{assessmentResult}</pre>
+                  <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                    <div className="space-y-4 text-sm md:text-base text-foreground leading-relaxed whitespace-pre-wrap font-sans">
+                      {assessmentResult}
+                    </div>
                   </div>
                 </div>
               )}

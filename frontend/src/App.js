@@ -93,6 +93,7 @@ function App() {
     } catch (error) {
       console.error('Error storing entry:', error);
       toast.error(error.response?.data?.detail || 'Failed to store content');
+      setStoreContent(''); // Clear textarea even on error for better UX
     } finally {
       setIsLoading(false);
     }

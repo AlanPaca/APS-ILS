@@ -221,10 +221,10 @@ function App() {
         <p className="text-sm text-muted-foreground mt-1">Manage and assess work examples against APS Integrated Leadership System</p>
       </div>
 
-      <div className="flex-1 flex overflow-hidden">
+      <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
         {/* Left Sidebar - Work Examples */}
-        <div className="w-full md:w-96 flex-shrink-0 md:border-r border-border bg-surface flex flex-col">
-          <div className="p-4 border-b border-border">
+        <div className="w-full md:w-96 flex-shrink-0 md:border-r border-b md:border-b-0 border-border bg-surface flex flex-col max-h-[40vh] md:max-h-none">
+          <div className="p-3 md:p-4 border-b border-border">
             <div className="flex gap-2 mb-3">
               <Button
                 data-testid="add-example-button"

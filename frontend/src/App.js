@@ -346,8 +346,8 @@ function App() {
             <p className="text-sm text-muted-foreground mt-1">Paste or select a work example for ILS framework assessment</p>
           </div>
 
-          <ScrollArea className="flex-1 p-6">
-            <div className="max-w-4xl mx-auto space-y-6">
+          <ScrollArea className="flex-1 p-4 md:p-6">
+            <div className="max-w-4xl mx-auto space-y-4 md:space-y-6">
               {/* Assessment Input */}
               <div className="bg-surface border border-border rounded-lg p-6">
                 <Textarea

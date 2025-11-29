@@ -349,13 +349,13 @@ function App() {
           <ScrollArea className="flex-1 p-4 md:p-6">
             <div className="max-w-4xl mx-auto space-y-4 md:space-y-6">
               {/* Assessment Input */}
-              <div className="bg-surface border border-border rounded-lg p-6">
+              <div className="bg-surface border border-border rounded-lg p-4 md:p-6">
                 <Textarea
                   data-testid="assessment-textarea"
                   placeholder="Paste your work example here for assessment...\n\nExample: Led a cross-functional team project that improved service delivery by 25% through strategic stakeholder engagement and innovative process improvements..."
                   value={assessmentText}
                   onChange={(e) => setAssessmentText(e.target.value)}
-                  className="min-h-[200px] mb-4"
+                  className="min-h-[150px] md:min-h-[200px] mb-4 text-sm md:text-base"
                 />
                 <div className="flex gap-2">
                   <Button

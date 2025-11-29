@@ -383,7 +383,7 @@ function App() {
 
               {/* Assessment Result */}
               {assessmentResult && (
-                <div className="bg-card border border-border rounded-lg p-6" data-testid="assessment-result">
+                <div className="bg-card border border-border rounded-lg p-4 md:p-6" data-testid="assessment-result">
                   <div className="flex justify-between items-start mb-4">
                     <div className="flex items-center gap-2">
                       <BookOpen className="h-5 w-5 text-accent" />
